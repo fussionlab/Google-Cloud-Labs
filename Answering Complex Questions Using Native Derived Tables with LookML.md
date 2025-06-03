@@ -29,7 +29,7 @@
 
 ### 📊 Step 1: Create the `brand_order_facts` View
 
-Create a new view called `user_facts` with the following configuration:
+Create a new view called `brand_order_facts` with the following configuration:
 
 ```lookml
 # If necessary, uncomment the line below to include explore_source.
