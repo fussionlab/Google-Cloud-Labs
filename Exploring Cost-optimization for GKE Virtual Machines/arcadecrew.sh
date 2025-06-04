@@ -187,8 +187,15 @@ echo
 kubectl get pod pod-1 pod-2 --output wide
 
 echo
+echo "${BLUE_TEXT}${BOLD_TEXT}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${RESET_FORMAT}"
+echo "${CYAN_TEXT}${BOLD_TEXT}🎥         NOW FOLLOW VIDEO STEPS         🎥${RESET_FORMAT}"
+echo "${BLUE_TEXT}${BOLD_TEXT}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${RESET_FORMAT}"
+echo
+
 echo "${WHITE_TEXT}${BOLD_TEXT}Lab Region: ${RESET_FORMAT}${CYAN_TEXT}${BOLD_TEXT}$REGION${RESET_FORMAT}"
 echo
+
+echo "${WHITE_TEXT}${BOLD_TEXT}OPEN THIS LINK: ${RESET_FORMAT}${CYAN_TEXT}${BOLD_TEXT}https://console.cloud.google.com/networking/networks/details/default?project=${PROJECT_ID}${RESET_FORMAT}"
 
 echo
 echo "${MAGENTA_TEXT}${BOLD_TEXT}💖 IF YOU FOUND THIS HELPFUL, SUBSCRIBE ARCADE CREW! 👇${RESET_FORMAT}"
