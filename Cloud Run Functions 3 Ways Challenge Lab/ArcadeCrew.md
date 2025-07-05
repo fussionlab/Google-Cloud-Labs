@@ -22,6 +22,7 @@ sudo chmod +x arcadecrew.sh
 ## 🎉 **Congratulations! Lab Completed Successfully!** 🏆  
 
 ---
+
 <div align="center" style="padding: 5px;">
   <h3>📱 Join the Arcade Crew Community</h3>
 
