@@ -32,7 +32,4 @@ sudo chmod +x arcadecrew.sh
 
 ---
 
-## 🤝 **Join the Community!**
 
-- [Whatsapp Group](https://chat.whatsapp.com/KkNEauOhBQXHdVcmqIlv9F)  
-[![Arcade Crew Channel](https://img.shields.io/badge/YouTube-Arcade%20Crew-red?style=flat&logo=youtube)](https://www.youtube.com/@Arcade61432?sub_confirmation=1)
