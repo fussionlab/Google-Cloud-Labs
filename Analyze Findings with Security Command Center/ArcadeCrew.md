@@ -10,13 +10,23 @@
 
 ---
 
-## ⚠️ Disclaimer ⚠️
+## ⚠️ **Disclaimer**
 
-<blockquote style="background-color: #fffbea; border-left: 6px solid #f7c948; padding: 1em; font-size: 15px; line-height: 1.5;">
-  <strong>Educational Purpose Only:</strong> This script and guide are intended <em>solely for educational purposes</em> to help you understand Google Cloud monitoring services and advance your cloud skills. Before using, please review it carefully to become familiar with the services involved.
-  <br><br>
-  <strong>Terms Compliance:</strong> Always ensure compliance with Qwiklabs' terms of service and YouTube's community guidelines. The aim is to enhance your learning experience—<em>not</em> to circumvent it.
-</blockquote>
+> 📘 **For Educational Use Only**
+> This repository and the included script are provided *strictly* for learning purposes. They are meant to help you explore and understand **Google Cloud’s monitoring services** more effectively and build your cloud skills.
+>
+> 📝 **Read Before Use:**
+> Please review the script carefully before running it to ensure you understand how the services involved work.
+
+---
+
+> 🛡 **Respect the Rules**
+> Make sure your usage is **in full compliance** with:
+>
+> * [Qwiklabs Terms of Service](https://www.cloudskillsboost.google/terms_of_service)
+> * [YouTube Community Guidelines](https://www.youtube.com/howyoutubeworks/policies/community-guidelines/)
+>
+> 🚫 This content is not intended to bypass any systems—**it's here to support your learning journey**.
 
 ---
 
