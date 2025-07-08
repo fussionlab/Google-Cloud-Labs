@@ -103,7 +103,11 @@ gcloud logging sinks create day2ops-sink \
     --log-filter='resource.type="k8s_container"' \
     --include-children --format='json'
 
-echo ""
+echo
+echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}  * * .         .         * *   * * .         .         * * ${FORMAT_RESET}"
+echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}      ${STYLE_BOLD}   KINDLY FOLLOW VIDEO INSTRUCTIONS CAREFULLY         ${FORMAT_RESET}"
+echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE} .       .      * * .           .  .       .      * * .   . ${FORMAT_RESET}"
+echo
 
 echo -e "${COLOR_YELLOW}${STYLE_BOLD} >>-- 🪣 Create a new Log bucket in the Cloud Console: --<< ${FORMAT_RESET} \033[1;34mhttps://console.cloud.google.com/logs/storage/bucket?inv=1&invt=Ab2LhA&project=$DEVSHELL_PROJECT_ID\033[0m"
 
