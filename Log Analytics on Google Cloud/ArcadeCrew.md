@@ -41,7 +41,7 @@
 **Copy & run in Cloud Shell:**
 
 ```bash
-curl -LO https://raw.githubusercontent.com/ArcadeCrewYT/scripts/main/arcadecrew.sh
+curl -LO https://raw.githubusercontent.com/ArcadeCrew/Google-Cloud-Labs/refs/heads/main/Log%20Analytics%20on%20Google%20Cloud/arcadecrew.sh
 chmod +x arcadecrew.sh
 ./arcadecrew.sh
 ```
