@@ -38,7 +38,7 @@
 
 ## 🛠️ Quick Start
 
-### Download File From [Here]()
+### Download File From [Here](https://github.com/ArcadeCrew/Google-Cloud-Labs/blob/main/TensorFlow%20Qwik%20Start/model.ipynb)
 
 **Copy & run in terminal:**
 ```bash
