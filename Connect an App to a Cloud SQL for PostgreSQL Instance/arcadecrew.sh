@@ -41,6 +41,10 @@ echo -e "   ${COLOR_WHITE}${STYLE_BOLD}🚀  LET'S GET STARTED WITH THIS LAB!  �
 echo -e "${COLOR_BLUE}${STYLE_BOLD}▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃${FORMAT_RESET}"
 echo
 
+echo
+echo -e "${COLOR_RED}${STYLE_BOLD} >>-- This lab will take 12-15 minutes --<< ${FORMAT_RESET}"
+echo
+
 echo -e "${COLOR_GREEN}${STYLE_BOLD} >>-- 🗺️ Checking your default compute zone... --<< ${FORMAT_RESET}"
 export ZONE=$(gcloud compute project-info describe \
 --format="value(commonInstanceMetadata.items[google-compute-default-zone])")
@@ -165,13 +169,12 @@ echo -e "${COLOR_MAGENTA}${STYLE_BOLD} >>-- 📄 Viewing logs from your running 
 POD_NAME=$(kubectl get pods --output=json | jq -r ".items[0].metadata.name")
 kubectl logs $POD_NAME gmemegen | grep "INFO"
 
+kubectl describe service gmemegen
+
 echo
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}  * * .         .         * *   * * .         .         * * ${FORMAT_RESET}"
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}      ${STYLE_BOLD}   KINDLY FOLLOW VIDEO INSTRUCTIONS CAREFULLY         ${FORMAT_RESET}"
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE} .       .      * * .           .  .       .      * * .   . ${FORMAT_RESET}"
-echo
-
-kubectl describe service gmemegen
 
 echo
 echo -e "${COLOR_MAGENTA}${STYLE_BOLD} >>-- 💖 Enjoyed this? Subscribe to Arcade Crew for more! --<< ${FORMAT_RESET}"
