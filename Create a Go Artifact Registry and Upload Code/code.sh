@@ -17,6 +17,8 @@ GOPROXY=proxy.golang.org go run github.com/GoogleCloudPlatform/artifact-registry
 mkdir hello
 cd hello
 go mod init labdemo.app/hello
+cat > hello.go<< EOF
+
 package main
 
 import "fmt"
@@ -24,6 +26,7 @@ import "fmt"
 func main() {
 	fmt.Println("Hello, Go module from Artifact Registry!")
 }
+EOF
 go build
 git config --global user.email $EMAIL
 git config --global user.name cls 
