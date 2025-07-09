@@ -22,10 +22,16 @@ echo "${CYAN_TEXT}${BOLD_TEXT}                  Starting the process...         
 echo "${CYAN_TEXT}${BOLD_TEXT}╚════════════════════════════════════════════════════════╝${RESET_FORMAT}"
 echo
 
-# Fetching the region
-echo
-read -p "${YELLOW_TEXT}${BOLD_TEXT}Enter REGION:${RESET_FORMAT}" REGION
-echo
+export REGION=$(gcloud compute project-info describe \
+--format="value(commonInstanceMetadata.items[google-compute-default-region])")
+
+if [[ -z "$REGION" ]]; then
+    echo -e "${BOLD_TEXT}${YELLOW_TEXT}⚠️  Default region not found! Please enter your region:${RESET_FORMAT}"
+    read -p "$(echo -e "${BOLD_TEXT}${CYAN_TEXT}Region:${RESET_FORMAT} ")" REGION
+    export REGION
+fi
+
+echo -e "${BOLD_TEXT}${GREEN_TEXT}✔ Using region: ${REGION}${RESET_FORMAT}"
 
 
 echo "${YELLOW_TEXT}${BOLD_TEXT}┌────────────────────────────────────────────────┐${RESET_FORMAT}"
