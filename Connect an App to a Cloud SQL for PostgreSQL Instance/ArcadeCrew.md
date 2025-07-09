@@ -36,7 +36,7 @@
 
 ---
 
-## 🛠️ Quick Start
+## 🛠️ Quick Start (This lab will take 12-15 mins)
 
 **Copy & run in Cloud Shell:**
 
