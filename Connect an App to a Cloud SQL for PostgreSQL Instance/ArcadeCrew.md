@@ -46,11 +46,6 @@ chmod +x arcadecrew.sh
 ./arcadecrew.sh
 ```
 
-### Password
-```
-supersecret!
-```
-
 ---
 
 ## 🎉 Lab Complete!
