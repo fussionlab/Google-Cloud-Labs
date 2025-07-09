@@ -165,25 +165,13 @@ echo -e "${COLOR_MAGENTA}${STYLE_BOLD} >>-- 📄 Viewing logs from your running 
 POD_NAME=$(kubectl get pods --output=json | jq -r ".items[0].metadata.name")
 kubectl logs $POD_NAME gmemegen | grep "INFO"
 
-echo -e "${COLOR_GREEN}${STYLE_BOLD} >>-- 🐘 Connecting to your Cloud SQL PostgreSQL instance... --<< ${FORMAT_RESET}"
-INSTANCE_NAME="postgres-gmemegen"
-DB_USER="postgres"
-DB_NAME="gmemegen_db"
-
-gcloud sql connect $INSTANCE_NAME --user=$DB_USER --quiet << EOF
-
-\c $DB_NAME
-
-SELECT * FROM meme;
-EOF
-
 echo
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}  * * .         .         * *   * * .         .         * * ${FORMAT_RESET}"
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE}      ${STYLE_BOLD}   KINDLY FOLLOW VIDEO INSTRUCTIONS CAREFULLY         ${FORMAT_RESET}"
 echo "${BG_YELLOW}${STYLE_BOLD}${FG_WHITE} .       .      * * .           .  .       .      * * .   . ${FORMAT_RESET}"
 echo
 
-echo gMemegen Load Balancer Ingress IP: http://$LOAD_BALANCER_IP
+kubectl describe service gmemegen
 
 echo
 echo -e "${COLOR_MAGENTA}${STYLE_BOLD} >>-- 💖 Enjoyed this? Subscribe to Arcade Crew for more! --<< ${FORMAT_RESET}"
